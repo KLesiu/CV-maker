@@ -1,0 +1,9 @@
+.personalChar{
+    border: 2px solid rgb(195, 31, 53);
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 15%;
+    padding: 10px;
+    width: 30%;
+}

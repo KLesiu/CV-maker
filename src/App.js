@@ -1,34 +1,41 @@
-
 import React, {Component} from 'react';
-
 import './App.css'
-import Header from './components/Header';
+import uniqid from "uniqid"
+ import Header from './components/Header';
+import Personal from './components/Personal';
+import Skills from './components/Skills';
+import PersonalChar from './components/PersonalChar';
 class App extends Component {
   constructor(){
     super()
     this.state={
-      name:'',
-      birthDate:'',
-      address:'',
-      city:{
-        zipCode:'',
-        cityName:'',
-        province:''
+      personalInfo:{
+        name:'',
+        birthDate:'',
+        address:'',
+        city:{
+          zipCode:'',
+          cityName:'',
+          province:''
+        },
+        phone:'',
+        mail:'',
       },
-      phone:'',
-      mail:'',
+      
       experience:[],
       experienceElement:{
         startWork:'',
         endWork:'',
         company:'',
-        position:''
+        position:'',
+        id:uniqid()
       },
       education:[],
       educationElement:{
         start:'',
         end:'',
-        schoolName:''
+        schoolName:'',
+        id:uniqid()
       
       },
       skills:'',
@@ -40,12 +47,20 @@ class App extends Component {
 
     }
   }
+  // handleChange(e){
+  //   this.setState({
+
+  //   })
+  // }
   render(){
+    
     return (
       <div>
         <Header />
         <form className='form'>
-    
+        <Personal personal={this.state.personalInfo}/>
+        <Skills skills={this.state.skills} />
+        <PersonalChar personalChar={this.state.personalCharacteristics} />
         </form>
       </div>
       );

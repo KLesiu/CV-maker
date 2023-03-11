@@ -1,0 +1,21 @@
+.personalInfo{
+align-items: flex-start;
+border: 2px solid grey;
+border-radius: 10px;
+display: flex;
+height: 50%;
+margin-left: 1%;
+margin-top: 1%;
+flex-wrap: wrap;
+padding: 10px;
+width:30%
+}
+.personalInfo h2{
+    text-align: center;
+}
+.personalInfo label{
+    width: 100%;
+}
+.personalInfo label input{
+    margin-left: 7px;
+}

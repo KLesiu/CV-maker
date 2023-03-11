@@ -1,0 +1,9 @@
+.skillsHolder{
+    border: 2px solid rgb(36, 162, 191);
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 15%;
+    padding: 10px;
+    width: 30%;
+}
