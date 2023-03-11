@@ -1,0 +1,24 @@
+
+
+  
+.propertiesEducation,.propertiesExperience{
+    align-items: flex-start;
+    border-top: 1px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    height: 30%;
+    padding: 1px;
+    width: 100%;
+}
+.propertiesExperience{
+    height: 15%;
+}
+
+
+.propertiesEducation label input{
+    margin-left: 5px;
+    width: 70%;
+}
+
+
