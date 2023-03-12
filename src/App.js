@@ -8,6 +8,7 @@ import PersonalChar from './components/PersonalChar';
 import Education from './components/Education';
 import Photo from './components/Photo';
 import Experience from './components/Experience';
+import Hobbies from './components/Hobbies';
 import './components/styles/Personal.css'
 import './components/styles/PersonalChar.css'
 import './components/styles/Skills.css'
@@ -115,10 +116,14 @@ class App extends Component {
               zipCode:this.state.zipCode,
               province:this.state.province,
               phone:this.state.phone,
-              mail:this.state.phone}} />
+              mail:this.state.mail}} />
             
           
           <Experience  experience={{FirstCompany:this.state.FirstCompany,FirstPosition:this.state.FirstPosition,FirstWorkStart:this.state.FirstWorkStart,FirstWorkEnd:this.state.FirstWorkEnd,SecondCompany:this.state.SecondCompany,SecondPosition:this.state.SecondPosition,SecondWorkStart:this.state.SecondWorkStart,SecondWorkEnd:this.state.SecondWorkEnd,ThirdCompany:this.state.ThirdCompany,ThirdPosition:this.state.ThirdPosition,ThirdWorkStart:this.state.ThirdWorkStart,ThirdWorkEnd:this.state.ThirdWorkEnd,FourthCompany:this.state.FourthCompany,FourthPosition:this.state.FourthPosition,FourthWorkStart:this.state.FourthWorkStart,FourthWorkEnd:this.state.FourthWorkEnd,FifthCompany:this.state.FifthCompany,FifthPosition:this.state.FifthPosition,FifthWorkStart:this.state.FifthWorkStart,FifthWorkEnd:this.state.FifthWorkEnd}}/>
+          <Education education={{FirstSchoolName:this.state.FirstSchoolName,FirstStart:this.state.FirstStart,FirstEnd:this.state.FirstEnd,SecondSchoolName:this.state.SecondSchoolName,SecondStart:this.state.SecondStart,SecondEnd:this.state.SecondEnd,ThirdSchoolName:this.state.ThirdSchoolName,ThirdStart:this.state.ThirdStart,ThidEnd:this.state.ThirdEnd}} />
+          <Skills skills={this.state.skills} />
+          <PersonalChar personalChar={this.state.personalCharacteristics} />
+          <Hobbies hobbies={this.state.hobbies} />
         </main>
       )
     } 

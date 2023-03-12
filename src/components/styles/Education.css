@@ -1,24 +1,23 @@
-
-
+.personalEducation{
+    margin-left: 5%;
+    width: 90%;
+}
+.personalEducation h2{
+    border-bottom: 1px solid black;
+}
+.personalEducationHolder{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+font-size: 13px;
+margin-left: 25%;
+margin-top: 2%;
+}
+.personalEducationHolder span{
+    margin-top: 1%;
+    margin-left: 2%;
+}
   
-.propertiesEducation,.propertiesExperience{
-    align-items: flex-start;
-    border-top: 1px solid orange;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 17px;
-    height: 30%;
-    padding: 1px;
-    width: 100%;
-}
-.propertiesExperience{
-    height: 15%;
-}
 
-
-.propertiesEducation label input{
-    margin-left: 5px;
-    width: 70%;
-}
 
 

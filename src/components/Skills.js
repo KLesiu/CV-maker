@@ -4,13 +4,16 @@ import './styles/Skills.css'
 class Skills extends Component{
     constructor(props){
         super()
-        this.skills=props
+        this.skills=props.skills
     }
     render(){
         return(
-        <div className='skillsHolder'>
+        <div className='personalSkills'>
             <h2>Umiejętności</h2>
-            <textarea></textarea>
+            <div className='personalSkillsHolder'>
+                <p>{this.skills}</p>
+            </div>
+
         </div>
         )
         

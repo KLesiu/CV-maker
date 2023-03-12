@@ -103,24 +103,69 @@ body{
     .personalInfo label input{
         margin-left: 7px;
     }
+    .propertiesEducation,.propertiesExperience{
+        align-items: flex-start;
+        border-top: 1px solid orange;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 17px;
+        height: 30%;
+        padding: 1px;
+        width: 100%;
+    }
+    .propertiesExperience{
+        height: 15%;
+    }
+    
+    
+    .propertiesEducation label input{
+        margin-left: 5px;
+        width: 70%;
+    }
+    .skillsHolder{
+        border: 2px solid rgb(36, 162, 191);
+        border-radius: 10px;
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 15%;
+        padding: 10px;
+        width: 30%;
+    }
+    .personalChar{
+        border: 2px solid rgb(195, 31, 53);
+        border-radius: 10px;
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 16%;
+        padding: 10px;
+        width: 30%;
+    }
 .cv{
     background-color: white;
     border: 1px solid rgb(0, 0, 0);
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 14px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 90%;
-    width: 60vw;  
+    height: 100%;
+    width: 50vw;  
+}
+.cv div{
+    margin-bottom: 15px;
 }
 .cv h1{
     text-align: center;
     width: 100%;
 }
-
+@media print{
+    .cv{
+        width: 100vw;
+        border: none;
+    }
+}
 
 
 

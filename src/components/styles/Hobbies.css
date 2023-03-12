@@ -1,16 +1,16 @@
-.personalChara{
+.personalHobbies{
     margin-left: 5%;
     width: 90%;
 }
-.personalChara h2{
+.personalHobbies h2{
     border-bottom: 1px solid black;
 }
-.personalCharaHolder{
+.personalHobbiesHolder{
     font-size: 13px;
     margin-left: 25%;
     margin-top: 2%;
 }
-.personalCharaHolder p{
+.personalHobbiesHolder p{
     margin-top: 1%;
     margin-left: 2%;
 }

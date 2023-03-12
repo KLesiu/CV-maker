@@ -1,9 +1,16 @@
-.skillsHolder{
-    border: 2px solid rgb(36, 162, 191);
-    border-radius: 10px;
-    margin-left: 1%;
+.personalSkills{
+    margin-left: 5%;
+    width: 90%;
+}
+.personalSkills h2{
+    border-bottom: 1px solid black;
+}
+.personalSkillsHolder{
+    font-size: 13px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.personalSkillsHolder p{
     margin-top: 1%;
-    height: 15%;
-    padding: 10px;
-    width: 30%;
+    margin-left: 2%;
 }

@@ -8,12 +8,13 @@
 .personalExperienceHolder{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     font-size: 13px;
     margin-left: 25%;
     margin-top: 2%;
 }
 .personalExperienceHolder span{
     margin-top: 1%;
-    width: 100%;
+    margin-left: 2%;
     
 }
