@@ -1,8 +1,10 @@
 .personalInformation{
     display: flex;
     flex-wrap: wrap;
+    font-size: 13px;
     height: 10%;
-    width: 45%;
+    margin-left: 5%;
+    width: 90%;
 
 }
 .personalInformation h2 b{

@@ -6,10 +6,10 @@ class Photo extends Component{
         this.photo=props.photo
     }
     render(){
-        console.log(this.photo)
+        
         return(
             <div className='personalPhoto'>
-                {/* <img src='C:\channels4_profile.jpg'/> */}
+                <img target="_blank"src={this.photo}/>
             </div>
         )
     }

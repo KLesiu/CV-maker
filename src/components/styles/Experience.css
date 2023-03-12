@@ -1,0 +1,19 @@
+.personalExperience{
+    margin-left: 5%;
+    width: 90%;
+}
+.personalExperience h2{
+    border-bottom: 1px solid black;
+}
+.personalExperienceHolder{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.personalExperienceHolder span{
+    margin-top: 1%;
+    width: 100%;
+    
+}

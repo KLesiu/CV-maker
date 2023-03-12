@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import PersonalChar from './components/PersonalChar';
 import Education from './components/Education';
 import Photo from './components/Photo';
+import Experience from './components/Experience';
 import './components/styles/Personal.css'
 import './components/styles/PersonalChar.css'
 import './components/styles/Skills.css'
@@ -105,7 +106,7 @@ class App extends Component {
       return(
         <main className='cv'>
           <h1><em>CURRICULUM VITAE</em></h1>
-          <section>
+          
             <Personal personal={{
               name:this.state.name,
               birthDate:this.state.birthDate,
@@ -115,8 +116,9 @@ class App extends Component {
               province:this.state.province,
               phone:this.state.phone,
               mail:this.state.phone}} />
-              <Photo photo={this.state.photo} />
-          </section>
+            
+          
+          <Experience  experience={{FirstCompany:this.state.FirstCompany,FirstPosition:this.state.FirstPosition,FirstWorkStart:this.state.FirstWorkStart,FirstWorkEnd:this.state.FirstWorkEnd,SecondCompany:this.state.SecondCompany,SecondPosition:this.state.SecondPosition,SecondWorkStart:this.state.SecondWorkStart,SecondWorkEnd:this.state.SecondWorkEnd,ThirdCompany:this.state.ThirdCompany,ThirdPosition:this.state.ThirdPosition,ThirdWorkStart:this.state.ThirdWorkStart,ThirdWorkEnd:this.state.ThirdWorkEnd,FourthCompany:this.state.FourthCompany,FourthPosition:this.state.FourthPosition,FourthWorkStart:this.state.FourthWorkStart,FourthWorkEnd:this.state.FourthWorkEnd,FifthCompany:this.state.FifthCompany,FifthPosition:this.state.FifthPosition,FifthWorkStart:this.state.FifthWorkStart,FifthWorkEnd:this.state.FifthWorkEnd}}/>
         </main>
       )
     } 
@@ -199,7 +201,7 @@ class App extends Component {
         
         <div className='photoHolder'>
           <h2>Zdjęcie:</h2>
-          <input  onChange={this.handleChange.bind(this)} name="photo"  type="file" />
+          <input id="myPhoto"  onChange={this.handleChange.bind(this)} name="photo"  type="file" />
         </div>
         <div className='hobbiesHolder'>
           <h2>Zainteresowania</h2>
