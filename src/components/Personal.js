@@ -15,8 +15,10 @@ class Personal extends Component{
                 <span>ul. {this.personal.address}</span>
                 <span>{this.personal.zipCode} {this.personal.city}</span>
                 <span>woj. {this.personal.province}</span>
-                <span>{this.personal.phone}</span>
-                <span>e-mail: {this.personal.mail}</span>
+                <span style={{display:'flex',alignItems:'center'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
+                    call</span>{this.personal.phone}</span>
+                <span style={{display:'flex',alignItems:'center'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
+                    mail</span>{this.personal.mail}</span>
             </div>
         )
     }

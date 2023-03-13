@@ -6,13 +6,11 @@ import Personal from './components/Personal';
 import Skills from './components/Skills';
 import PersonalChar from './components/PersonalChar';
 import Education from './components/Education';
-import Photo from './components/Photo';
+// import Photo from './components/Photo';
 import Experience from './components/Experience';
 import Hobbies from './components/Hobbies';
-import './components/styles/Personal.css'
-import './components/styles/PersonalChar.css'
-import './components/styles/Skills.css'
-import './components/styles/Education.css'
+import Print from './components/Prins';
+
 class App extends Component {
   constructor(){
     super()
@@ -78,7 +76,8 @@ class App extends Component {
       personalCharacteristics:'',
       hobbies:'',
       photo:'',
-      createCv:false
+      createCv:false,
+    
 
       
 
@@ -124,7 +123,10 @@ class App extends Component {
           <Skills skills={this.state.skills} />
           <PersonalChar personalChar={this.state.personalCharacteristics} />
           <Hobbies hobbies={this.state.hobbies} />
+          <p id="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb procesu rekrutacji, zgodnie z ustawą z dnia 29.08.1997r. o ochronie danych osobowych - Dz. U. Nr 133 poz.883.</p>
+          <Print  />
         </main>
+
       )
     } 
     return (
@@ -204,10 +206,10 @@ class App extends Component {
           </div>
         </div>
         
-        <div className='photoHolder'>
+        {/* <div className='photoHolder'>
           <h2>Zdjęcie:</h2>
           <input id="myPhoto"  onChange={this.handleChange.bind(this)} name="photo"  type="file" />
-        </div>
+        </div> */}
         <div className='hobbiesHolder'>
           <h2>Zainteresowania</h2>
           <textarea   onChange={this.handleChange.bind(this)} name="hobbies" />
