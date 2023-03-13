@@ -4,6 +4,7 @@
 }
 .personalEducation h2{
     border-bottom: 1px solid black;
+    font-size: 18px;
 }
 .personalEducationHolder{
 display: flex;

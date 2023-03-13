@@ -18,23 +18,23 @@ class Experience extends Component{
                 <div className='personalExperience'>
                     <h2>Doświadczenie:</h2>
                     <div className='personalExperienceHolder'>
-                        <span>Od:{this.experience.FifthWorkStart} do: {this.experience.FifthWorkEnd || 'aktualnie'}</span>
+                        <span>Od: {this.experience.FifthWorkStart} do: {this.experience.FifthWorkEnd || 'aktualnie'}</span>
                         <span>{this.experience.FifthCompany} na stanowisku: {this.experience.FifthPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.FourthWorkStart} do: {this.experience.FourthWorkEnd}</span>
+                    <span>Od: {this.experience.FourthWorkStart} do: {this.experience.FourthWorkEnd}</span>
                         <span>{this.experience.FourthCompany} na stanowisku: {this.experience.FourthPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd}</span>
+                    <span>Od: {this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd}</span>
                         <span>{this.experience.ThirdCompany} na stanowisku: {this.experience.ThirdPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
+                    <span>Od: {this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
                         <span>{this.experience.SecondCompany} na stanowisku: {this.experience.SecondPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
+                    <span>Od: {this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
                         <span>{this.experience.FirstCompany} na stanowisku: {this.experience.FirstPosition}</span>
                     </div>
                 </div>
@@ -45,19 +45,19 @@ class Experience extends Component{
                 <div className='personalExperience'>
                     <h2>Doświadczenie:</h2>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.FourthWorkStart} do: {this.experience.FourthWorkEnd||'aktualnie'}</span>
+                    <span>Od: {this.experience.FourthWorkStart} do: {this.experience.FourthWorkEnd||'aktualnie'}</span>
                         <span>{this.experience.FourthCompany} na stanowisku:{this.experience.FourthPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd}</span>
+                    <span>Od: {this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd}</span>
                         <span>{this.experience.ThirdCompany} na stanowisku: {this.experience.ThirdPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
+                    <span>Od: {this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
                         <span>{this.experience.SecondCompany} na stanowisku: {this.experience.ThirdPosition}</span>
                     </div>
                     <div className='personalExperienceHolder'>
-                    <span>Od:{this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
+                    <span>Od: {this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
                         <span>{this.experience.FirstCompany} na stanowisku: {this.experience.FifthPosition}</span>
                     </div>
                 </div>
@@ -69,15 +69,15 @@ class Experience extends Component{
                 <h2>Doświadczenie:</h2>
                 
                 <div className='personalExperienceHolder'>
-                <span>Od:{this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd||'aktualnie'}</span>
+                <span>Od: {this.experience.ThirdWorkStart} do: {this.experience.ThirdWorkEnd||'aktualnie'}</span>
                     <span>{this.experience.ThirdCompany} na stanowisku: {this.experience.ThirdPosition}</span>
                 </div>
                 <div className='personalExperienceHolder'>
-                <span>Od:{this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
+                <span>Od: {this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd}</span>
                     <span>{this.experience.SecondCompany} na stanowisku: {this.experience.SecondPosition}</span>
                 </div>
                 <div className='personalExperienceHolder'>
-                <span>Od:{this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
+                <span>Od: {this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
                     <span>{this.experience.FirstCompany} na stanowisku: {this.experience.FirstPosition}</span>
                 </div>
             </div>
@@ -89,11 +89,11 @@ class Experience extends Component{
             <h2>Doświadczenie:</h2>
             
             <div className='personalExperienceHolder'>
-            <span>Od:{this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd||'aktualnie'}</span>
+            <span>Od: {this.experience.SecondWorkStart} do: {this.experience.SecondWorkEnd||'aktualnie'}</span>
                 <span>{this.experience.SecondCompany} na stanowisku:{this.experience.SecondPosition}</span>
             </div>
             <div className='personalExperienceHolder'>
-            <span>Od:{this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
+            <span>Od: {this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd}</span>
                 <span>{this.experience.FirstCompany} na stanowisku:{this.experience.FirstPosition}</span>
             </div>
         </div>
@@ -106,7 +106,7 @@ class Experience extends Component{
             <h2>Doświadczenie:</h2>
             
             <div className='personalExperienceHolder'>
-            <span>Od:{this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd||'aktualnie'}</span>
+            <span>Od: {this.experience.FirstWorkStart} do: {this.experience.FirstWorkEnd||'aktualnie'}</span>
                 <span>{this.experience.FirstCompany} na stanowisku: {this.experience.FirstPosition}</span>
             </div>
         </div>
