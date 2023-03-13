@@ -9,7 +9,7 @@ class Skills extends Component{
     render(){
         return(
         <div className='personalSkills'>
-            <h2>Umiejętności</h2>
+            <h2>Umiejętności:</h2>
             <div className='personalSkillsHolder'>
                 <p>{this.skills}</p>
             </div>

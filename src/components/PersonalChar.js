@@ -9,7 +9,7 @@ class PersonalChar extends Component{
     render(){
         return(
             <div className='personalChara'>
-            <h2>Cechy osobowe</h2>
+            <h2>Cechy osobowe:</h2>
             <div className='personalCharaHolder'>
                 <p>{this.personalChar}</p>
             </div>
