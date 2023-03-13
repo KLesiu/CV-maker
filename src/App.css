@@ -194,13 +194,17 @@ width: 92%;
         justify-content: center;
     }
     .buttonCreateCv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
         right: 6%;
-        top: 5%;
+        top: 4%;
         width: 15vw;
     }
     .cv{
         margin-left: 1%;
-        width: 90vw;
+        width: 100vw;
     }
     
 }

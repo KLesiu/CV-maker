@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CV-maker/static/css/main.5f9eacb2.css",
-    "main.js": "/CV-maker/static/js/main.0a2cd55e.js",
+    "main.css": "/CV-maker/static/css/main.5a0db385.css",
+    "main.js": "/CV-maker/static/js/main.e1d31ca6.js",
     "index.html": "/CV-maker/index.html",
-    "main.5f9eacb2.css.map": "/CV-maker/static/css/main.5f9eacb2.css.map",
-    "main.0a2cd55e.js.map": "/CV-maker/static/js/main.0a2cd55e.js.map"
+    "main.5a0db385.css.map": "/CV-maker/static/css/main.5a0db385.css.map",
+    "main.e1d31ca6.js.map": "/CV-maker/static/js/main.e1d31ca6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f9eacb2.css",
-    "static/js/main.0a2cd55e.js"
+    "static/css/main.5a0db385.css",
+    "static/js/main.e1d31ca6.js"
   ]
 }
