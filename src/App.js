@@ -6,7 +6,7 @@ import Personal from './components/Personal';
 import Skills from './components/Skills';
 import PersonalChar from './components/PersonalChar';
 import Education from './components/Education';
-// import Photo from './components/Photo';
+import Photo from './components/Photo';
 import Experience from './components/Experience';
 import Hobbies from './components/Hobbies';
 import Print from './components/Prins';
@@ -85,11 +85,16 @@ class App extends Component {
     
   }
   handleChange=(e)=>{
-    this.setState(
+    
+     
+      
+      this.setState(
         {
-        [`${e.target.name}`]:e.target.value  
-        }
-      )
+       [`${e.target.name}`]:e.target.value  
+       }
+     )
+     
+   
     
    
   }
@@ -99,6 +104,14 @@ class App extends Component {
       createCv:true
     })
     this.render()
+  }
+  previewFile=(e)=>{
+   this.setState({
+    photo:e.target.files[0]
+   })
+    
+   
+ 
   }
   render(){
     if(this.state.createCv===true){
@@ -116,7 +129,7 @@ class App extends Component {
               province:this.state.province,
               phone:this.state.phone,
               mail:this.state.mail}} />
-            
+            <Photo photo={this.state.photo} />
           
           <Experience  experience={{FirstCompany:this.state.FirstCompany,FirstPosition:this.state.FirstPosition,FirstWorkStart:this.state.FirstWorkStart,FirstWorkEnd:this.state.FirstWorkEnd,SecondCompany:this.state.SecondCompany,SecondPosition:this.state.SecondPosition,SecondWorkStart:this.state.SecondWorkStart,SecondWorkEnd:this.state.SecondWorkEnd,ThirdCompany:this.state.ThirdCompany,ThirdPosition:this.state.ThirdPosition,ThirdWorkStart:this.state.ThirdWorkStart,ThirdWorkEnd:this.state.ThirdWorkEnd,FourthCompany:this.state.FourthCompany,FourthPosition:this.state.FourthPosition,FourthWorkStart:this.state.FourthWorkStart,FourthWorkEnd:this.state.FourthWorkEnd,FifthCompany:this.state.FifthCompany,FifthPosition:this.state.FifthPosition,FifthWorkStart:this.state.FifthWorkStart,FifthWorkEnd:this.state.FifthWorkEnd}}/>
           <Education education={{FirstSchoolName:this.state.FirstSchoolName,FirstStart:this.state.FirstStart,FirstEnd:this.state.FirstEnd,SecondSchoolName:this.state.SecondSchoolName,SecondStart:this.state.SecondStart,SecondEnd:this.state.SecondEnd,ThirdSchoolName:this.state.ThirdSchoolName,ThirdStart:this.state.ThirdStart,ThidEnd:this.state.ThirdEnd}} />
@@ -206,10 +219,10 @@ class App extends Component {
           </div>
         </div>
         
-        {/* <div className='photoHolder'>
+        <div className='photoHolder'>
           <h2>Zdjęcie:</h2>
-          <input id="myPhoto"  onChange={this.handleChange.bind(this)} name="photo"  type="file" />
-        </div> */}
+          <input id="myPhoto"  onChange={this.previewFile.bind(this)} name="photo"  type="file" />
+        </div>
         <div className='hobbiesHolder'>
           <h2>Zainteresowania</h2>
           <textarea   onChange={this.handleChange.bind(this)} name="hobbies" />
