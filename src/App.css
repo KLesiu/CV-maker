@@ -186,22 +186,37 @@ body{
     margin-top: 10px;
     width: 70%;
 }
-
+#edit{
+    background-color: silver;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 7%;
+    font-size: 20px;
+    
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 5%;
+}
+#edit:hover{
+    background-color: rgb(186, 153, 22);
+}
 @media print{
     .cv{
         width: 100vw;
         border: none;
     }
-    #printCv{
+    #printCv,#edit{
         display: none;
     }
+    
 }
 @media screen and (max-width:1200px) {
     .form{
        height: 100%;
        
     }
-    .personalInfo,.skillsHolder,.personalChar,.experiencesHolder,.hobbiesHolder,.educationHolder{
+    .personalInfo,.skillsHolder,.personalChar,.experiencesHolder,.hobbiesHolder,.educationHolder,.photoHolder{
 width: 92%;
     }
     #generatorPage{
@@ -222,6 +237,14 @@ width: 92%;
         margin-left: 1%;
         width: 100vw;
     }
+    #edit{
+        height: 5%;
+        font-size: 13px;
+        left: 5%;
+        top: 1%;
+        width: 14%;
+    }
+    
     
 }
 

@@ -113,9 +113,19 @@ class App extends Component {
    
  
   }
+  hideAndEdit=()=>{
+    
+    this.setState({
+      createCv:false
+    })
+    
+    this.render()
+
+  }
   render(){
+    console.log(this.state.createCv)
     if(this.state.createCv===true){
-      document.querySelector('#generatorPage').classList.add('hidden')
+      // document.querySelector('#generatorPage').classList.add('hidden')
       return(
         <main className='cv'>
           <h1><em>CURRICULUM VITAE</em></h1>
@@ -138,6 +148,7 @@ class App extends Component {
           <Hobbies hobbies={this.state.hobbies} />
           <p id="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb procesu rekrutacji, zgodnie z ustawą z dnia 29.08.1997r. o ochronie danych osobowych - Dz. U. Nr 133 poz.883.</p>
           <Print  />
+          <button id="edit" onClick={this.hideAndEdit}>Edytuj</button>
         </main>
 
       )
@@ -149,103 +160,103 @@ class App extends Component {
       
         <div className="personalInfo">
             <h2>Podstawowe Informacje</h2>
-            <label>Imie i nazwisko:
-            <input onChange={this.handleChange.bind(this)} name="name" type="text" />
+            <label>Imię i nazwisko:
+            <input value={this.state.name||""} onChange={this.handleChange.bind(this)} name="name" type="text" />
             </label>
             
             <label>Data urodzenia:
-            <input onChange={this.handleChange.bind(this)} name="birthDate" type="date" />
+            <input value={this.state.birthDate||''} onChange={this.handleChange.bind(this)} name="birthDate" type="date" />
             </label>
-            <label>Pełny adres zamieszkania:
-                <input onChange={this.handleChange.bind(this)} name="address" type="text" />
+            <label>Adres zamieszkania:
+                <input value={this.state.address||''} onChange={this.handleChange.bind(this)} name="address" type="text" />
             </label>
             <label>Kod pocztowy:
-                <input onChange={this.handleChange.bind(this)} name="zipCode"type="text" />
+                <input value={this.state.zipCode||''} onChange={this.handleChange.bind(this)} name="zipCode"type="text" />
             </label>
             <label>
                 Miasto:
-                <input onChange={this.handleChange.bind(this)} name="city" type="text" />
+                <input value={this.state.city||''} onChange={this.handleChange.bind(this)} name="city" type="text" />
             </label>
             <label>
                 Województwo:
-                <input onChange={this.handleChange.bind(this)} name="province" type="text"/>
+                <input value={this.state.province||''} onChange={this.handleChange.bind(this)} name="province" type="text"/>
             </label>
             <label>
                 Telefon:
-                <input onChange={this.handleChange.bind(this)} name="phone"type="tel"/>
+                <input value={this.state.phone||''} onChange={this.handleChange.bind(this)} name="phone"type="tel"/>
             </label>
             <label>
                 E-mail:
-                <input onChange={this.handleChange.bind(this)} name="mail" type="email" />
+                <input value={this.state.mail||''} onChange={this.handleChange.bind(this)} name="mail" type="email" />
             </label>
         </div>
         <div className='skillsHolder'>
             <h2>Umiejętności</h2>
-            <textarea onChange={this.handleChange.bind(this)} name="skills"></textarea>
+            <textarea value={this.state.skills||''} onChange={this.handleChange.bind(this)} name="skills"></textarea>
         </div>
         <div className='personalChar'>
                 <h2>Cechy Osobowe</h2>
-                <textarea onChange={this.handleChange.bind(this)} name="personalCharacteristics"></textarea>
+                <textarea value={this.state.personalCharacteristics||''} onChange={this.handleChange.bind(this)} name="personalCharacteristics"></textarea>
             </div>
             <div className='experiencesHolder'>
         <h2>Doświadczenie:</h2>
           <div className='propertiesExperience'>
-            <label>Firma: <input name="FirstCompany" type="text" onChange={this.handleChange.bind(this)}/></label>
-            <label>Stanowisko: <input name="FirstPosition" type="text" onChange={this.handleChange.bind(this)} /></label>
-            <label>Od: <input name='FirstWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
-            <label>Do: <input name='FirstWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Firma: <input value={this.state.FirstCompany||''} name="FirstCompany" type="text" onChange={this.handleChange.bind(this)}/></label>
+            <label>Stanowisko: <input value={this.state.FirstPosition||''} name="FirstPosition" type="text" onChange={this.handleChange.bind(this)} /></label>
+            <label>Od: <input value={this.state.FirstWorkStart||''} name='FirstWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Do: <input value={this.state.FirstWorkEnd||''} name='FirstWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
           </div>
           <div className='propertiesExperience'>
-            <label>Firma: <input name='SecondCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
-            <label>Stanowisko: <input name='SecondPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
-            <label>Od: <input name='SecondWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
-            <label>Do: <input name='SecondWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Firma: <input value={this.state.SecondCompany||''} name='SecondCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
+            <label>Stanowisko: <input value={this.state.SecondPosition||''} name='SecondPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
+            <label>Od: <input value={this.state.SecondWorkStart||''} name='SecondWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Do: <input value={this.state.SecondWorkEnd||''} name='SecondWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
           </div><div className='propertiesExperience'>
-            <label>Firma: <input name='ThirdCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
-            <label>Stanowisko: <input name='ThirdPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
-            <label>Od: <input name='ThirdWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
-            <label>Do: <input name='ThirdWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Firma: <input value={this.state.ThirdCompany||''} name='ThirdCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
+            <label>Stanowisko: <input value={this.state.ThirdPosition||''} name='ThirdPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
+            <label>Od: <input value={this.state.ThirdWorkStart||''} name='ThirdWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Do: <input value={this.state.ThirdWorkEnd||''} name='ThirdWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
           </div><div className='propertiesExperience'>
-            <label>Firma: <input name='FourthCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
-            <label>Stanowisko: <input name='FourthPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
-            <label>Od: <input name='FourthWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
-            <label>Do: <input name='FourthWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Firma: <input value={this.state.FourthCompany||''} name='FourthCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
+            <label>Stanowisko: <input value={this.state.FourthPosition||''} name='FourthPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
+            <label>Od: <input value={this.state.FourthWorkStart||''} name='FourthWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Do: <input value={this.state.FourthWorkEnd||''} name='FourthWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
           </div>
           <div className='propertiesExperience'>
-            <label>Firma: <input name='FifthCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
-            <label>Stanowisko: <input name='FifthPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
-            <label>Od: <input name='FifthWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
-            <label>Do: <input name='FifthWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Firma: <input value={this.state.FifthCompany||''} name='FifthCompany' type="text" onChange={this.handleChange.bind(this)}/></label>
+            <label>Stanowisko: <input value={this.state.FifthPosition||''} name='FifthPosition' type="text" onChange={this.handleChange.bind(this)} /></label>
+            <label>Od: <input value={this.state.FifthWorkStart||''} name='FifthWorkStart' type="date" onChange={this.handleChange.bind(this)} /></label>
+            <label>Do: <input value={this.state.FifthWorkEnd||''} name='FifthWorkEnd' type="date" onChange={this.handleChange.bind(this)} /></label>
           </div>
         </div>
         
         <div className='photoHolder'>
           <h2>Zdjęcie:</h2>
-          <input id="myPhoto"  onChange={this.previewFile.bind(this)} name="photo"  type="file" />
+          <input  id="myPhoto"  onChange={this.previewFile.bind(this)} name="photo"  type="file" />
         </div>
         <div className='hobbiesHolder'>
           <h2>Zainteresowania</h2>
-          <textarea   onChange={this.handleChange.bind(this)} name="hobbies" />
+          <textarea value={this.state.hobbies||''}  onChange={this.handleChange.bind(this)} name="hobbies" />
         </div>
        
         <div className='educationHolder'>
             <h2>Wykształcenie</h2>
             <div className='propertiesEducation'>
-            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)} name="FirstSchoolName" type="text"/></label>
-            <label>Od:<input onChange={this.handleChange.bind(this)} name='FirstStart' type="date" /></label>
-            <label>Do:<input onChange={this.handleChange.bind(this)} name='FirstEnd' type="date" /></label>
+            <label className="firstLabelSchool">Szkoła: <input value={this.state.FirstSchoolName||''} onChange={this.handleChange.bind(this)} name="FirstSchoolName" type="text"/></label>
+            <label>Od:<input value={this.state.FirstStart||''} onChange={this.handleChange.bind(this)} name='FirstStart' type="date" /></label>
+            <label>Do:<input value={this.state.FirstEnd||''} onChange={this.handleChange.bind(this)} name='FirstEnd' type="date" /></label>
             
             </div>
             <div className='propertiesEducation'>
-            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)}name="SecondSchoolName" type="text"/></label>
-            <label>Od:<input onChange={this.handleChange.bind(this)} name='SecondStart' type="date" /></label>
-            <label>Do:<input onChange={this.handleChange.bind(this)} name='SecondEnd' type="date" /></label>
+            <label className="firstLabelSchool">Szkoła: <input value={this.state.SecondSchoolName} onChange={this.handleChange.bind(this)}name="SecondSchoolName" type="text"/></label>
+            <label>Od:<input value={this.state.SecondStart||''} onChange={this.handleChange.bind(this)} name='SecondStart' type="date" /></label>
+            <label>Do:<input value={this.state.SecondEnd||''} onChange={this.handleChange.bind(this)} name='SecondEnd' type="date" /></label>
             
             </div>
              <div className='propertiesEducation'>
-            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)} name="ThirdSchoolName" type="text"/></label>
-            <label>Od:<input onChange={this.handleChange.bind(this)} name='ThirdStart' type="date" /></label>
-            <label>Do:<input onChange={this.handleChange.bind(this)} name='ThirdEnd' type="date" /></label>
+            <label className="firstLabelSchool">Szkoła: <input value={this.state.ThirdSchoolName||''} onChange={this.handleChange.bind(this)} name="ThirdSchoolName" type="text"/></label>
+            <label>Od:<input  value={this.state.ThirdStart||''} onChange={this.handleChange.bind(this)} name='ThirdStart' type="date" /></label>
+            <label>Do:<input value={this.state.ThirdEnd||''} onChange={this.handleChange.bind(this)} name='ThirdEnd' type="date" /></label>
             
             </div>
           
