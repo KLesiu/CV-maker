@@ -3,12 +3,12 @@ body{
 }
 .form{
     align-items: center;
-    border: 2px solid black;
+
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -61,7 +61,7 @@ body{
     border: 2px solid rgb(117, 61, 4);
     border-radius: 10px;
     display: flex;
-    height: 70%;
+    height: 50%;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
@@ -119,12 +119,27 @@ body{
     .propertiesEducation {
         align-items: flex-start;
        flex-direction: column;
-       justify-content: space-around;
+       flex-wrap: wrap;
+       gap: 5%;
+       justify-content: flex-start;
     }
     
+    .propertiesEducation label,.propertiesExperience label{
+        width: 100%;
+    }
+   
     .propertiesEducation label input{
         margin-left: 5px;
         width: 70%;
+    }
+    textarea{
+        margin-left: 60%;
+        width: 40%;
+    }
+    label{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .skillsHolder{
         border: 2px solid rgb(36, 162, 191);
@@ -171,6 +186,7 @@ body{
     margin-top: 10px;
     width: 70%;
 }
+
 @media print{
     .cv{
         width: 100vw;

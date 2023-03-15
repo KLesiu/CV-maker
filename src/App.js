@@ -231,19 +231,19 @@ class App extends Component {
         <div className='educationHolder'>
             <h2>Wykształcenie</h2>
             <div className='propertiesEducation'>
-            <label>Szkoła: <input onChange={this.handleChange.bind(this)} name="FirstSchoolName" type="text"/></label>
+            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)} name="FirstSchoolName" type="text"/></label>
             <label>Od:<input onChange={this.handleChange.bind(this)} name='FirstStart' type="date" /></label>
             <label>Do:<input onChange={this.handleChange.bind(this)} name='FirstEnd' type="date" /></label>
             
             </div>
             <div className='propertiesEducation'>
-            <label>Szkoła: <input onChange={this.handleChange.bind(this)}name="SecondSchoolName" type="text"/></label>
+            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)}name="SecondSchoolName" type="text"/></label>
             <label>Od:<input onChange={this.handleChange.bind(this)} name='SecondStart' type="date" /></label>
             <label>Do:<input onChange={this.handleChange.bind(this)} name='SecondEnd' type="date" /></label>
             
             </div>
              <div className='propertiesEducation'>
-            <label>Szkoła: <input onChange={this.handleChange.bind(this)} name="ThirdSchoolName" type="text"/></label>
+            <label className="firstLabelSchool">Szkoła: <input onChange={this.handleChange.bind(this)} name="ThirdSchoolName" type="text"/></label>
             <label>Od:<input onChange={this.handleChange.bind(this)} name='ThirdStart' type="date" /></label>
             <label>Do:<input onChange={this.handleChange.bind(this)} name='ThirdEnd' type="date" /></label>
             
