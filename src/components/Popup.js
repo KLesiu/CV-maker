@@ -11,7 +11,7 @@ if(props.popUp===false){
             <h2>Zanim zaczniesz</h2>
             <button onClick={closePopUp}>X</button>
             <p>Jeśli chcesz dodać zdjęcie, zrób to na samym początku wypełniania formularza. Jeśli wygenerujesz CV możesz w każdej chwili wrócić do formularza i zastosować poprawki. CV można zapisać w PDF klikając przycisk "Drukuj" i ustawiając w panelu drukarki opcje "Zapisz do PDF" lub wydrukować. Nie musisz zapełnić wszystkich pól np. w sekcji "Wykształcenie", możesz dostosować to do siebie. </p>
-            <p><a target="_blank" href="https://github.com/KLesiu">Twórca aplikacji</a></p>
+            <p><a rel="noreferrer" target="_blank" href="https://github.com/KLesiu">Twórca aplikacji</a></p>
         </div>
     )
 }

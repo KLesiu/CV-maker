@@ -6,9 +6,8 @@ body{
 
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 110vh;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -19,24 +18,23 @@ body{
     border: 2px solid rgb(186, 121, 23);
     border-radius: 10px;
     display: flex;
-    height: 52%;
+    gap: 10px;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:45%
+    width:90%
     }
 .photoHolder{
     align-items: flex-start;
     border: 2px solid rgb(68, 200, 20);
     border-radius: 10px;
     display: flex;
-    /* height: 15%; */
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:45%
+    width:43.5%
 }
 .photoHolder input,.hobbiesHolder h2{
     width: 100%;
@@ -49,24 +47,23 @@ body{
     border: 2px solid rgb(173, 8, 195);
     border-radius: 10px;
     display: flex;
-    /* height: 15%; */
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:45% 
+    width:43.5% 
 }
 .educationHolder{
     align-items: flex-start;
     border: 2px solid rgb(117, 61, 4);
     border-radius: 10px;
     display: flex;
-    height: 40%;
+    gap: 10px;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:45%  
+    width:90%  
 }
 .buttonCreateCv{
     border-radius: 10px;
@@ -87,12 +84,12 @@ body{
     border: 2px solid grey;
     border-radius: 10px;
     display: flex;
-    height: 44%;
+    gap: 10px;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:45%
+    width:90%
     }
     .personalInfo h2{
         text-align: center;
@@ -108,6 +105,7 @@ body{
         border-top: 1px solid orange;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
         font-size: 17px;
         height: 30%;
         padding: 1px;
@@ -120,7 +118,7 @@ body{
         align-items: flex-start;
        flex-direction: column;
        flex-wrap: wrap;
-       gap: 5%;
+       gap: 10px;
        justify-content: flex-start;
     }
     
@@ -128,12 +126,9 @@ body{
         width: 100%;
     }
    
-    .propertiesEducation label input{
-        margin-left: 5px;
-        width: 70%;
-    }
+   
     textarea{
-        margin-left: 60%;
+       
         width: 40%;
     }
     label{
@@ -146,18 +141,18 @@ body{
         border-radius: 10px;
         margin-left: 1%;
         margin-top: 1%;
-        /* height: 15%; */
+    
         padding: 10px;
-        width: 45%;
+        width: 43.5%;
     }
     .personalChar{
         border: 2px solid rgb(195, 31, 53);
         border-radius: 10px;
         margin-left: 1%;
         margin-top: 1%;
-        /* height: 15%; */
+        
         padding: 10px;
-        width: 45%;
+        width: 43.5%;
     }
 .cv{
     background-color: white;
@@ -203,6 +198,28 @@ body{
 }
 #edit:hover{
     background-color: rgb(186, 153, 22);
+}
+.personalInfo:hover{
+    background-color: rgba(128, 128, 128, 0.458);
+}
+.skillsHolder:hover{
+    background-color: rgba(12, 102, 162, 0.511);
+}
+.personalChar:hover{
+    background-color: rgba(255, 0, 0, 0.491);
+}
+.photoHolder:hover{
+    background-color: rgba(18, 183, 48, 0.469);
+
+}
+.hobbiesHolder:hover{
+    background-color: rgba(124, 18, 199, 0.504);
+}
+.experiencesHolder:hover{
+    background-color: rgba(169, 24, 24, 0.523);
+}
+.educationHolder:hover{
+    background-color: rgba(117, 61, 4, 0.501) ;
 }
 @media print{
     .cv{
