@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css'
-import uniqid from "uniqid"
+
  import Header from './components/Header';
 import Personal from './components/Personal';
 import Skills from './components/Skills';
@@ -56,20 +56,18 @@ class App extends Component {
         FirstStart:'',
         FirstEnd:'',
         FirstSchoolName:'',
-        FirstId:uniqid(),
           
       
       
         SecondStart:'',
         SecondEnd:'',
         SecondSchoolName:'',
-        SecondId:uniqid(),
+       
      
       
         ThirdStart:'',
         ThirdEnd:'',
         ThirdSchoolName:'',
-        ThirdId:uniqid(),
      
       
       skills:'',
@@ -123,9 +121,7 @@ class App extends Component {
 
   }
   render(){
-    console.log(this.state.createCv)
     if(this.state.createCv===true){
-      // document.querySelector('#generatorPage').classList.add('hidden')
       return(
         <main className='cv'>
           <h1><em>CURRICULUM VITAE</em></h1>
