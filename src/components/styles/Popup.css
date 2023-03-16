@@ -1,0 +1,30 @@
+.popUp{
+    border: 1px solid black;
+   border-radius: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    padding: 1%;
+    width: 30vw;
+}
+.popUp h2{
+    width: 80%;
+}
+.popUp button{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.394);
+    cursor: pointer;
+    width: 5%;
+    height: 35px;
+}
+.popUp button:hover{
+    background-color: red;
+}
+.hidden{
+    display: none;
+}

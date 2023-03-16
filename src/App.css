@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    height: 110vh;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -19,24 +19,24 @@ body{
     border: 2px solid rgb(186, 121, 23);
     border-radius: 10px;
     display: flex;
-    height: 90%;
+    height: 52%;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:30%
+    width:45%
     }
 .photoHolder{
     align-items: flex-start;
     border: 2px solid rgb(68, 200, 20);
     border-radius: 10px;
     display: flex;
-    height: 15%;
+    /* height: 15%; */
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:30%
+    width:45%
 }
 .photoHolder input,.hobbiesHolder h2{
     width: 100%;
@@ -49,24 +49,24 @@ body{
     border: 2px solid rgb(173, 8, 195);
     border-radius: 10px;
     display: flex;
-    height: 15%;
+    /* height: 15%; */
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:30% 
+    width:45% 
 }
 .educationHolder{
     align-items: flex-start;
     border: 2px solid rgb(117, 61, 4);
     border-radius: 10px;
     display: flex;
-    height: 50%;
+    height: 40%;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:30%  
+    width:45%  
 }
 .buttonCreateCv{
     border-radius: 10px;
@@ -87,12 +87,12 @@ body{
     border: 2px solid grey;
     border-radius: 10px;
     display: flex;
-    height: 50%;
+    height: 44%;
     margin-left: 1%;
     margin-top: 1%;
     flex-wrap: wrap;
     padding: 10px;
-    width:30%
+    width:45%
     }
     .personalInfo h2{
         text-align: center;
@@ -146,18 +146,18 @@ body{
         border-radius: 10px;
         margin-left: 1%;
         margin-top: 1%;
-        height: 15%;
+        /* height: 15%; */
         padding: 10px;
-        width: 30%;
+        width: 45%;
     }
     .personalChar{
         border: 2px solid rgb(195, 31, 53);
         border-radius: 10px;
         margin-left: 1%;
         margin-top: 1%;
-        height: 16%;
+        /* height: 15%; */
         padding: 10px;
-        width: 30%;
+        width: 45%;
     }
 .cv{
     background-color: white;
@@ -186,13 +186,14 @@ body{
     margin-top: 10px;
     width: 70%;
 }
+
 #edit{
     background-color: silver;
     border-radius: 10px;
     cursor: pointer;
     
     height: 7%;
-    font-size: 20px;
+    font-size: 15px;
     
     position: absolute;
     right: 10%;

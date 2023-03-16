@@ -10,6 +10,7 @@ import Photo from './components/Photo';
 import Experience from './components/Experience';
 import Hobbies from './components/Hobbies';
 import Print from './components/Prins';
+import Popup from './components/Popup';
 
 class App extends Component {
   constructor(){
@@ -75,6 +76,7 @@ class App extends Component {
       hobbies:'',
       photo:'',
       createCv:false,
+      popUp:false,
     
 
       
@@ -99,7 +101,8 @@ class App extends Component {
   onSubmit=(e)=>{
     e.preventDefault()
     this.setState({
-      createCv:true
+      createCv:true,
+      popUp:true,
     })
     this.render()
   }
@@ -152,6 +155,7 @@ class App extends Component {
     return (
       <div id="generatorPage">
         <Header />
+        <Popup popUp={this.state.popUp}/>
         <form onSubmit={this.onSubmit} className='form'>
       
         <div className="personalInfo">
@@ -194,6 +198,14 @@ class App extends Component {
                 <h2>Cechy Osobowe</h2>
                 <textarea value={this.state.personalCharacteristics||''} onChange={this.handleChange.bind(this)} name="personalCharacteristics"></textarea>
             </div>
+            <div className='photoHolder'>
+          <h2>Zdjęcie:</h2>
+          <input  id="myPhoto"  onChange={this.previewFile.bind(this)} name="photo"  type="file" />
+        </div>
+        <div className='hobbiesHolder'>
+          <h2>Zainteresowania</h2>
+          <textarea value={this.state.hobbies||''}  onChange={this.handleChange.bind(this)} name="hobbies" />
+        </div>
             <div className='experiencesHolder'>
         <h2>Doświadczenie:</h2>
           <div className='propertiesExperience'>
@@ -226,14 +238,7 @@ class App extends Component {
           </div>
         </div>
         
-        <div className='photoHolder'>
-          <h2>Zdjęcie:</h2>
-          <input  id="myPhoto"  onChange={this.previewFile.bind(this)} name="photo"  type="file" />
-        </div>
-        <div className='hobbiesHolder'>
-          <h2>Zainteresowania</h2>
-          <textarea value={this.state.hobbies||''}  onChange={this.handleChange.bind(this)} name="hobbies" />
-        </div>
+       
        
         <div className='educationHolder'>
             <h2>Wykształcenie</h2>
