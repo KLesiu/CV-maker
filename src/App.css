@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 85vh;
+    
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -190,11 +190,13 @@ body{
     background-color: silver;
     border-radius: 10px;
     cursor: pointer;
+    
     height: 7%;
     font-size: 20px;
     
     position: absolute;
     right: 10%;
+    text-align: center;
     top: 30%;
     width: 5%;
 }
@@ -230,7 +232,7 @@ width: 92%;
         align-items: center;
         font-size: 15px;
         right: 6%;
-        top: 4%;
+        top: 3.5%;
         width: 15vw;
     }
     .cv{
@@ -243,6 +245,9 @@ width: 92%;
         left: 5%;
         top: 1%;
         width: 14%;
+    }
+    input{
+        width: 40%;
     }
     
     

@@ -15,9 +15,9 @@ class Personal extends Component{
                 <span>ul. {this.personal.address}</span>
                 <span>{this.personal.zipCode} {this.personal.city}</span>
                 <span>woj. {this.personal.province}</span>
-                <span style={{display:'flex',alignItems:'center',justifyContent:'flex-start', gap:5+'%'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
+                <span style={{display:'flex',alignItems:'center',justifyContent:'flex-start', gap:5+'px'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
                     call</span>{this.personal.phone}</span>
-                <span style={{display:'flex',alignItems:'center',justifyContent:'flex-start', gap:5+'%'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
+                <span style={{display:'flex',alignItems:'center',justifyContent:'flex-start', gap:5+'px'}}><span style={{fontSize:15+'px',width:3+'%'}} className="material-symbols-outlined">
                     mail</span>{this.personal.mail}</span>
             </div>
         )
